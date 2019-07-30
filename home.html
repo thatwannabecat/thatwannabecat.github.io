@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>TheGreatGenderGameList</h1>
+<hr />
+
+<h2>
+    <a href="the_list.html">The List</a>
+</h2>
+<p><strong>What is this?</strong></p>
+<p>A list of Games with good (on the weird subjective level that is good) Trans/Nonbinary/Genderqueer/Assorted Gender Sounds inclusive. Yes they do exist. Probably may expand to other kinds of rep later down the line (namely other lgb+, plural rep if any decent exist). </p>
+<p><strong>Why exist? Aren't there others?</strong></p>
+<p>Yes, but most lists found are usually consider questionable for couple of reasons:</p>
+<ul>
+<li>
+<p>Lack of Comprehensiveness. Indie games are growing by the number, and if you are queer they are probably the best bet for good rep until the world/mainstream media is a kinder more hospitable environment. This is not to dismiss characters like Crem in Dragon Age Inquisition, Vivian in Mario:TTYD, or Fl4k in Borderlands 3 for helping bring trans* characters into a more mainstream and positive light (they will be included). However at this focus of popular mainstream games ignores the work that may indie game creators, including many many trans/queer creators; are doing to make games more hospitable for trans people. There should be room for characters from indie games like Tara Bryck from Heart of the Woods, Min-seo from Butterfly Soup, Terra-Luna, Pluto, and Mercury from Heaven Will Be Mine; games like Monster Prom that select pronouns, and Damien from Dream Daddy (all of whom save Damien are not on Wikipedia's <a href="https://en.wikipedia.org/wiki/List_of_video_games_with_LGBT_characters" title="Wikipedia's List of LGBT Characters">list</a> of LGBT characters in video games). There should also be attention drawn to events that are for trans* games and trans* creators (such as <a href="https://itch.io/jam/trans-gal-jam-2"> trans-gal jam</a> (ignoring problematic issues with exluding anyone not AMAB/Transfem identifying)).</p>
+</li>
+<li>
+<p>Lack of thought on quality. An important note on this: <em>good is by and large subjective</em>. Yes this is a contradiction to this point but what I want to have this list is some kind of community discussion/thought of whats good representation. What you may consider good, maybe different from the person who suggested this. The goal of this rules is to have people put some thought into why this character or game is good representation. Not all representation is good representation.<a href="https://en.wikipedia.org/wiki/List_of_video_games_with_LGBT_characters" title="Wikipedia's list of LGBT characters">Wikipedia list of LGBT characters</a> is questionable in many places. Do you want to get recommended Catherine: Full Body after the <a href="https://www.resetera.com/threads/major-spoilers-one-of-the-endings-in-catherine-full-body-gets-extremely-transphobic-moreso-than-that-original-op-updated-feb-17.100027/" title="This Transphobic mess again">mess of an ending (CW: Transphobia)</a> and treatment of Erica? Chrono Trigger is a classic, but is the only <a href="https://en.wikipedia.org/wiki/Characters_of_Chrono_Trigger#Magus" title="Chrono Trigger Magus">Gender Queer character</a> being a minor villain the best rep? Do you want to play games that <a href="https://lgbtfansdeservebetter.com/bury-your-gays/" title="Bury Your Gays Website">bury your trans</a>? Probably not. Most picks by media outlets don't really put in effort to consider the quality of the character. Even fan/community lists often have questionable picks. Samus is transwomen is fun, but so far the only pointer is a very obscure interview with word of god using a slur on her. Is she the best pick for a list of trans characters? The goal is to include games where the obvious intent is to portray a trans character (the more explicitly trans the better) and provide some level of good treatment/representation for them. Villains will be included so long as they aren't a sterotype or are compelling (ideally both). </p>
+</li>
+<li>
+<p>Lack of detail about the representation in the games themselves. Are you looking for some non-white queer characters finally? Can't seem to find any decent transmasc rep? Craving to use your neo-pronouns in a game? Want a game where all idea of gender is a joke? This list should help with that. </p>
+</li>
+<li>
+<p>More resources isn't ever a bad thing.</p>
+</li>
+<li>
+<p>I just want to have a list of fun games to play and to recommend to people that won't demonize them while playing it. One that is handled by a community of invested individuals can pool resources and give out good recommendations to people (or at least recommendations that people enjoyed on some level). Enjoying life is important, and we deserve to have games that represent us (and made by people who are part of the queer community). A list that will hopefully be updated for some time, and provide a useful resource for those who want good representation.</p>
+</li>
+</ul>
+<p><strong>What Games are Allowed?</strong></p>
+<p>Any and all. Is it sold in a game store digital or otherwise? Good enough. Visual Novels, RPGS, Visual Novels, Shooters, Fighting Games, and more Visual Novels.</p>
+<p>Expect a lot of Visual Novels.</p>
+<p>The bottom line is that this list should contain a list of games that are fun to play and overall enjoyable. </p>
+<p>As a side note, several of these games delve into topics that require a Content Warning (CW) for those who have triggers. Best to check what is listed for the  Even without the CW they may cover mature topics that don't warrant a CW. Best to actually check out a game before you buy it to see if its something you are interested in.</p>
+<p><strong>What kind of representation are we looking for?</strong>
+<em>this will be edited at some point with other input</em></p>
+<ul>
+<li>Explicitly stated by Word of God or in game or so thoroughly implied to the point of confirmed.</li>
+<li>They are a positive representation of Trans people.</li>
+<li>They deal with Trans or gender issues.</li>
+<li>They aren't murdered/forced to go back to AGAB/etc. Tragedy porn is overrated.</li>
+<li>Their Transness/Gender is not used for humor/humiliation.</li>
+<li>They on some level make you/others feel better or relate to them and your experiences of being trans. This is probably the most important one cause all others are just guidelines of ideas of whats good.</li>
+</ul>
+<p><em>The important thing to note</em> is that this is just a starting point to get thinking of what makes good Representation.  Representation doesn't just stop at being explicit, and is determined by stuff like <a href="https://medium.com/mammon-machine-zeal/against-representation-97bc44b4d609" title="An Interesting Essay on Representation">nuance, intent, and other aspects</a>. Good representation is important and there are <a href="http://citation.allacademic.com/meta/p_mla_apa_research_citation/4/8/9/6/2/p489627_index.html" title="Symbolic Annihilation">studies</a> detailing the effects of the lack of it (also known as &quot;Symbolic Annihilation&quot; (yes this can be achieved by simply omission)). The character doesn't need to be absolute bestest thing ever but some level of good is needed. Looking for perfection in anything just leads to toxicity.</p>
+<p><strong>Whats the Format??</strong></p>
+<p>This list will be broken into various identities under the trans* umbrella. Each entry will have the following format:</p>
+<ul>
+<li><p>Name: The name of the game. May eventually link to its own page.</p></li>
+<li><p>Systems: A list of systems the game can be found on with links to their store pages.</p></li>
+<li><p>Genres: The Genres the game falls under. Is it a RPG, a Visual Novel, a Shooter, or a Visual Novel? Is it fantastic in nature or grounded? This will give you a general scope of the game. </p></li>
+<li>
+    <p>
+    Character Description: A very <em>brief</em> description of the character representation. This is not meant be a comprehensive description of the character, nor does it go into what I think of them quality wise (as a literary character, as representation). It does however detail role in the game, whom they represent and other details about them (is it discussed in game, or is more strong subtext, or is it word of god).
+    <strong>If a character has a * next to them that means I'm considering them for removal.</strong> I probably haven't because of a variety of reasons. Most likely due to the fact that I don't fall under that characters
+    vague umbrella and don't feel comfortable acting as a final arbiter for them.
+    </p>
+ </li>
+<li>
+    <p>
+        Age Recommendation: A rough age recommendation. Many of these games don't have an ERSB rating due to their nature as indie games, but those that do I try to follow. Anything with 18+ is either explicit sexual content, or extremely violent in nature beyond normal M rating. Several of these games maybe entirely sexual in nature/pornographic or rely on a metric ton of blood and violence. Just a heads up.
+    </p>
+</li>
+<li>
+    <p>
+        Content Warning: This is a list of content warning or triggers or any disturbing content you may find in game (or just a photosensitive warning). Best to read this before checking any of these games out seriously to see if you can handle the content involved. Or just you know not play a game with suicide/transphobia/violence/shit you maybe tired of in real life. Life is hard and its ok just to have something fun.
+    </p>
+</li>
+</ul>
+
+<h2>
+    <a href="the_list.html">The List</a>
+</h2>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
