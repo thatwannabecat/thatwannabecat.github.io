@@ -13,7 +13,7 @@ I wanted some means of curation over the list, but wanted people to be able to s
 
 Right now you are looking at the code base of the project, [here](https://thatwannabecat.github.io/) is the website itself.
 
-### What is it Written in?###
+### What is it Written in? ###
 
 This is basically pure html with some java script to implement the [datatables](https://www.datatables.net/ "Datatables") framework. Also CSS.
 
@@ -21,6 +21,6 @@ This is basically pure html with some java script to implement the [datatables](
 
 Go to the website [here](https://thatwannabecat.github.io/) and start searching for games! You can use the search bar to search any aspect that you would like. Each game will have its name, a blurb about the characters in it, and some content warning stuff among other info. The website itself has more concrete info.
 
-### How can I help?###
+### How can I help? ###
 
 If you got a game to contribute, or a bug to fix; make a pull request and start coding away! More info about contribution can be found [here](https://thatwannabecat.github.io/submission/submission.html).
